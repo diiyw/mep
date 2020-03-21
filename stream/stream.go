@@ -5,7 +5,7 @@ import (
 )
 
 func Copy(rw1 io.ReadWriter, rw2 io.ReadWriter) error {
-	err := make(chan error, 1)
+	err := make(chan error)
 	go func() {
 		_, er := io.Copy(rw1, rw2)
 		if er != nil {

@@ -13,5 +13,5 @@ go build
 
 # Run
 ```bash
-./mep start
+mep [listen address]
 ```
